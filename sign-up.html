@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/sign-up.css">
+    
+    <!-- Font Aweasome -->
+    <script src="https://kit.fontawesome.com/9067b2984e.js" crossorigin="anonymous"></script>
+    <script src="./js/all.min.js"></script>
+    <link rel="stylesheet" href="./style/all.min.css">
+</head>
+<body>
+    <div class='sign-up-container'>
+        <div class='img'></div>
+        <div class='content'>
+            <div class='heading'>
+                <h3>Create Account</h3>
+                <p>
+                    Go ahead and sign up, let everyone know how awesome you are!
+                </p>
+            </div>
+            <form >
+                <div class='input-field'>
+                    <span>
+                        <i class="fa-regular fa-user icon"></i>
+                    </span>
+                    <input
+                        type="text"
+                        placeholder="Username"
+                        required="false"
+                        id="username"
+                        class=""
+                    />
+                </div>
+
+                <div class='input-field'>
+                    <span>
+                        <i class="fa-regular fa-envelope icon"></i>
+                    </span>
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        required="false"
+                        id="email"
+                        class=""
+                    />
+                </div>
+
+                <div class='input-field'>
+                    <span>
+                        <i class="fa-solid fa-lock icon"></i>
+                    </span>
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        required="false"
+                        id="password"
+                        class=""
+                    />
+                </div>
+
+                <div class='input-field'>
+                    <span>
+                        <i class="fa-solid fa-lock icon"></i>
+                    </span>
+                    <input
+                        type="password"
+                        placeholder="Confirm Password"
+                        required="false"
+                        id="confirm_password"
+                        class=""
+                    />
+                </div>
+                <button id="submitBtn">Create Account</button>
+            </form>
+            <p class="err-msg"></p>
+
+        </div>
+    </div>
+    <script src="./js/signUp.js"></script>
+</body>
+</html>

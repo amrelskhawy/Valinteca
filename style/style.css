@@ -1,0 +1,136 @@
+/* Import The Main Font */
+/* Mulish */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+/* Abdoullah Ashgar EL-kharef Regular */
+@font-face {
+    font-family: 'Abdoullah Ashgar EL-kharef Regular';
+    src: url('../assets/fonts/Abdoullah\ Ashgar\ EL-kharef\ Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/* Main Styling  */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 100px;
+    gap: 10px;
+    background-image: url('../assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* Components */
+/* Headline Component */
+
+.heading h3 {
+    color: #2d2d2d;
+    width: 315px;
+    height: 67px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 120%;
+    font-family:'Abdoullah Ashgar EL-kharef Regular' ;
+}
+
+.heading p {
+    width: 450px;
+    height: 76px;
+    color: #1F1249;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+.heading a {
+    color: #1F1249;
+
+}
+
+/* Button Component */
+button {
+    width: 450px;
+    height: 60px;
+    font-size: 1rem;
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    box-shadow: 0px 6px 18px #9cadf2;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+/* Input Component */
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    gap: 12px;
+
+    width: 450px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #DBE3FF;
+    border-radius: 10px;
+}
+.input-field input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    width: 369px;
+    height: 44px;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    display: flex;
+    align-items: center;
+
+    /* Primary Colour - Dark Grey */
+
+    color: #3B3B3B;
+}
+
+.input-field span {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -1px;
+    color: #9CADF2;
+    border-right: 1px solid #9CADF2;
+    padding-right: 10px;
+}
+
+.icon {
+    font-size: 18px;
+}

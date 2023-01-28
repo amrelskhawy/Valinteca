@@ -1,0 +1,28 @@
+.welcome-container {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+    width: 1080px;
+    height: 435px;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+}
+
+.welcome-container .img {
+    width: 450px;
+    height: 315px;
+    background: url('../../assets/images/welcome.png');
+    background-size: cover;
+    background-position: 20%;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+.welcome-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
