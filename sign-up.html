@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,19 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/sign-up.css">
-    
+
     <!-- Font Aweasome -->
     <script src="https://kit.fontawesome.com/9067b2984e.js" crossorigin="anonymous"></script>
     <script src="./js/all.min.js"></script>
     <link rel="stylesheet" href="./style/all.min.css">
+    <script>
+        const { username, email } = localStorage
+        if (email && username) {
+            window.location = "/home.html"
+        }
+    </script>
 </head>
+
 <body>
     <div class='sign-up-container'>
         <div class='img'></div>
@@ -28,62 +36,37 @@
                     <span>
                         <i class="fa-regular fa-user icon"></i>
                     </span>
-                    <input
-                        type="text"
-                        placeholder="Username"
-                        required="false"
-                        id="username"
-                        name="username"
-                    />
+                    <input type="text" placeholder="Username" required="false" id="username" name="username" />
                 </div>
 
                 <div class='input-field'>
                     <span>
                         <i class="fa-regular fa-envelope icon"></i>
                     </span>
-                    <input
-                        type="email"
-                        placeholder="Email"
-                        required="false"
-                        id="email"
-                        name="email"
-                        value=""
-                    />
+                    <input type="email" placeholder="Email" required="false" id="email" name="email" value="" />
                 </div>
 
                 <div class='input-field'>
                     <span>
                         <i class="fa-solid fa-lock icon"></i>
                     </span>
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        required="false"
-                        id="password"
-                        name="password"
-                        value=""
-                    />
+                    <input type="password" placeholder="Password" required="false" id="password" name="password"
+                        value="" />
                 </div>
 
                 <div class='input-field'>
                     <span>
                         <i class="fa-solid fa-lock icon"></i>
                     </span>
-                    <input
-                        type="password"
-                        placeholder="Confirm Password"
-                        required="false"
-                        id="confirm_password"
-                        name="confirm_password"
-                        value=""
-                    />
+                    <input type="password" placeholder="Confirm Password" required="false" id="confirm_password"
+                        name="confirm_password" value="" />
                 </div>
-                <button id="submitBtn">Create Account</button>
+                <button onclick="(this) => this.preventDefault();" id="submitBtn">Create Account</button>
             </form>
             <p class="err-msg"></p>
 
         </div>
     </div>
     <script src="./js/signUp.js"></script>
-</body>
-</html>
+</body >
+</html >

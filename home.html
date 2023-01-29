@@ -5,8 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script src="./js/protectedRoute.js" ></script>
+    
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
+
 </head>
 <body>
-    <h1>Hello Home</h1>
+    <div class='home'>
+        <div class='img' ></div>
+        <div class='content'>
+            <div class='heading' >
+                <h3>Successfully logged in</h3>
+                <p id="email"></p>
+            </div>
+        </div>
+        <button onclick="() => localStorage.clear(); window.reload();">Log Out</button>
+    </div>
+    <script >
+        if (localStorage.email && localStorage.username) {
+            document.getElementById('email').textContent = localStorage.email
+        }
+    </script>
 </body>
 </html>

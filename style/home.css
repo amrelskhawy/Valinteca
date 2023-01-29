@@ -1,0 +1,43 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+
+    width: 1080px;
+    height: 576px;
+
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.home .img {
+    width: 450px;
+    height: 500px;
+
+    background: url('../../assets/images/success.png');
+    border-radius: 10px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.heading h3 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+#email {
+    text-decoration: underline;
+}
