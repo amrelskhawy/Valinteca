@@ -47,6 +47,8 @@ body {
     font-family:'Abdoullah Ashgar EL-kharef Regular' ;
 }
 
+
+
 .heading p {
     width: 450px;
     height: 76px;
@@ -62,6 +64,8 @@ body {
     color: #1F1249;
 
 }
+
+
 
 /* Button Component */
 button {
@@ -79,6 +83,19 @@ button {
     cursor: pointer;
 }
 
+@media (max-width: 450px) {
+    .heading h3 {
+        font-size: 2.5rem;
+    }
+    .heading p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
 
 /* Input Component */
 
@@ -133,4 +150,11 @@ button {
 
 .icon {
     font-size: 18px;
+}
+
+
+@media (max-width: 450px) {
+    .input-field { 
+        max-width: 330px
+    }
 }

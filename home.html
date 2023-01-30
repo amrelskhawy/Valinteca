@@ -19,8 +19,8 @@
                 <h3>Successfully logged in</h3>
                 <p id="email"></p>
             </div>
+            <button onclick="() => localStorage.clear(); window.reload();">Log Out</button>
         </div>
-        <button onclick="() => localStorage.clear(); window.reload();">Log Out</button>
     </div>
     <script >
         if (localStorage.email && localStorage.username) {

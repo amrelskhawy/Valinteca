@@ -18,7 +18,6 @@ const handleChange = (e) => {
     formData[name] = value
     document.getElementById(name).value = value
     errHolder.textContent = ''
-    console.log(formData)
 }
 
 
@@ -83,11 +82,8 @@ const handleSubmit = (e) => {
     else {
         postData('https://goldblv.com/api/hiring/tasks/register', formData)
             .then((data) => {
-                console.log(data)
                 if (data.statusText === "OK" &&
                     data.status === 200) {
-
-                    loading = false;
 
                     window.location = "/home.html"
 

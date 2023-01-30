@@ -14,9 +14,11 @@
     <script src="./js/all.min.js"></script>
     <link rel="stylesheet" href="./style/all.min.css">
     <script>
-        const { username, email } = localStorage
+        if (localStorage.username && localStorage.email ) {
+            const { username, email } = localStorage
         if (email && username) {
             window.location = "/home.html"
+        }
         }
     </script>
 </head>
