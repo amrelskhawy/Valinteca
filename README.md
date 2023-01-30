@@ -3,9 +3,9 @@
 It's Task For Valinteca For Job Role : "Frontend Developer"
 
 ## Made By :
-    1. React Js
-    2. React Hooks
-    3. SCSS
+    1. HTML5
+    2. CSS3
+    3. Pure JS ( Vanilla Js )
 
 ## Routes :
     1. Welcome Page ('/')
