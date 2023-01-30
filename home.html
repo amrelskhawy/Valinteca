@@ -19,13 +19,19 @@
                 <h3>Successfully logged in</h3>
                 <p id="email"></p>
             </div>
-            <button onclick="() => localStorage.clear(); window.reload();">Log Out</button>
+            <button id="logOut">Log Out</button>
         </div>
     </div>
     <script >
         if (localStorage.email && localStorage.username) {
             document.getElementById('email').textContent = localStorage.email
         }
+        document.getElementById("logOut").addEventListener("click", (e)=> {
+            e.preventDefault()
+            localStorage.clear(); 
+            window.location = '/sign-up.html';
+
+        })
     </script>
 </body>
 </html>
